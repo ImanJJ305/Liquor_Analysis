@@ -3,10 +3,10 @@
   Data Sample: https://www.kaggle.com/datasets/zynicide/wine-reviews
 
 ## Overview of Project
-  Topic:  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of June 15th, 2017. 
 
-### Topic
-
+### Topic 
+  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of June 15th, 2017. 
+  
 ### Questions
   1. Which wine should we choose to produce more of based on the reviews of our consumers. 
   2. Which winrey are we going to work with based on the variety we select and the reviews provided. 
