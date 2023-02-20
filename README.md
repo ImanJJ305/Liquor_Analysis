@@ -5,7 +5,7 @@
 ## Overview of Project
 
 ### Topic 
-  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of June 15th, 2017. 
+  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. 
   
 ### Questions
   1. Which wine should we choose to produce more of based on the reviews of our consumers. 
