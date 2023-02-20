@@ -7,6 +7,8 @@
 ### Topic 
   Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. 
   
+### Description of Data
+  
 ### Questions
   1. Which wine should we choose to produce more of based on the reviews of our consumers. 
   2. Which winrey are we going to work with based on the variety we select and the reviews provided. 
