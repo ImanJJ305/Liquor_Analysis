@@ -5,6 +5,6 @@
 ## Overview of Project
 
 ### Purpose and Background
-  We are members of a new department at Wotal Tine interested in changing the layout and floorplan of our locations to place the more highly valued varieties of wine in. more visible spaces 
+  We are members of a new department at Wotal Tine & More Inc interested in changing the layout and floorplan of our locations to place the more highly valued/revered varieties of wine in more visible areas of our store fronts with the hopes of increasing sales. We intend on making these decisions based on reviews 
   
   
