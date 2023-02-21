@@ -1,3 +1,4 @@
 # Liquor_Sales_Analysis
 
-https://www.kaggle.com/datasets/zynicide/wine-reviews
+  Data Sample: https://www.kaggle.com/datasets/zynicide/wine-reviews
+  
