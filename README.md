@@ -5,7 +5,7 @@
 ## Overview of Project
 
 ### Topic 
-  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. 
+  Selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. This topic was selected as we all wanted to work with a product or data type that we were either familiar with or would be interested in learning more about. Once we stumbled upon this data set our group agreed that this would be an interesting subject to evaluate and decided to select this as our data source for the assignment.
   
 ### Description of Data
   The data being used for this analysis consists of a dataset containing information scrapped from [Wine Enthsiasts](https://www.winemag.com/?s=&drink_type=wine).The datasets contain 150k wine reviews from the source. There are thirteen columns within the file. The columns are described by [the originator of the data](https://github.com/zackthoutt/wine-deep-learning) below: 
