@@ -5,4 +5,4 @@
 ## Overview of Project
 
 ### Purpose and Background
-  We are members of a new department at Wotal Tine & More Inc interested in changing the layout and floorplan of our locations to place the more highly valued/revered varieties of wine in more visible areas of our store fronts, with the hopes of increasing sales. We intend on making these decisions based on reviews screapped from [Wine Enthsiasts](https://www.winemag.com/?s=&drink_type=wine) (source: https://github.com/zackthoutt/wine-deep-learning). 
+  The files within this repository contain presentations of analyses made to progress the sales of a fictional company for the University of Miami's Data Analytics Bootcamp. We are members of a new department at Wotal Tine & More Inc interested in changing the layout and floorplan of our locations to place the more highly valued/revered varieties of wine in more visible areas of our store fronts, with the hopes of increasing sales. We intend on making these decisions based on reviews screapped from [Wine Enthsiasts](https://www.winemag.com/?s=&drink_type=wine) (source: https://github.com/zackthoutt/wine-deep-learning). 
