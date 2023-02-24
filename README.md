@@ -56,4 +56,5 @@ Once the optimal weights were found, the model's performance was evaluated using
 <img width="982" alt="Screenshot 2023-02-23 at 10 22 12 PM" src="https://user-images.githubusercontent.com/112649072/221084163-0be3d2b2-ca71-4152-82bf-ac960824f0cd.png">
 
 ### Prediction vs Actual Value
-<img width="189" alt="Screenshot 2023-02-23 at 10 22 37 PM" src="https://user-images.githubusercontent.com/112649072/221084211-1ceb564d-a519-4b78-80a9-4d400f0d79a9.png">
+<img width="205" alt="Screenshot 2023-02-23 at 10 29 57 PM" src="https://user-images.githubusercontent.com/112649072/221085158-2e88cf9e-2652-4295-8d7f-d52f1e6618d6.png">
+
