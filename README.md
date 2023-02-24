@@ -11,6 +11,7 @@ After addressing the null values, the next step involved adding binning to certa
 
 ### Image of Region Counts
 <img width="701" alt="Screenshot 2023-02-23 at 10 13 40 PM" src="https://user-images.githubusercontent.com/112649072/221083152-59737ec2-53ff-411f-b083-26bcd83a4efa.png">
+
 ### Image of Winery Counts
 <img width="713" alt="Screenshot 2023-02-23 at 10 14 43 PM" src="https://user-images.githubusercontent.com/112649072/221083254-5b2097a1-e287-4939-82b8-66229a8f89ed.png">
 
