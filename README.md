@@ -30,4 +30,5 @@
 
 Machine Learning Questions: 
   1. Will consumers purchase the type of wine we choose to produce based on their reviews?
-  2. Do popular buzz words lead to higher reviews? (Break down the description of the wines to find the most popular words used to describe the alcohol and determine if these popular words associate to higher reviews)
+  2. Predict scores of future wine tastings based on previous ones. 
+  3. Do popular buzz words lead to higher reviews? (Break down the description of the wines to find the most popular words used to describe the alcohol and determine if these popular words associate to higher reviews)
