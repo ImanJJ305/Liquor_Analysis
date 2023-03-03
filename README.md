@@ -1,6 +1,6 @@
 # Wine_Analysis_Neural_Network_Model
 ## Overview
-This project is being conductin to assist a fictional company in selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. This topic was selected as we all wanted to work with a product or data type that we were either familiar with or would be interested in learning more about. Once we stumbled upon this data set our group agreed that this would be an interesting subject to evaluate and decided to select this as our data source for the assignment.
+This project is being conducted to assist a fictional company in selecting a wine to increase production on, and determining the relationship between reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. This topic was selected as we all wanted to work with a product or data type that we were either familiar with or would be interested in learning more about. Once we stumbled upon this data set our group agreed that this would be an interesting subject to evaluate and decided to select this as our data source for the assignment.
 
 In addition to determing the production increases, this project aims to create a neural network that can predict wine review scores based on various wine characteristics. The process involves data collection, preprocessing, and model development. By successfully executing this project, we aim to increase the sales and growth of this fictional company as well as create a robust neural network with far-reaching applications in artificial intelligence and machine learning.
 
@@ -23,6 +23,14 @@ The subsequent step involved modifying the description column containing excessi
 ### Finding Adjectives in the Descriptions Column
 <img width="1153" alt="Screenshot 2023-02-23 at 10 15 46 PM" src="https://user-images.githubusercontent.com/112649072/221083546-3d303a9a-6adf-4076-b437-6c36d851e154.png">
 In the final step, the Designation column was dropped as it was deemed irrelevant to predicting the wine reviews.
+
+## Designing an ERD and Creating a Database
+
+Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in order to better understand how different wines are sorted into different categories, as well as which factors are considered when writing a review about a certain wine. After cleaning the data, it was sorted into different categories depending on how a potential user would want to group certain wines. These categories include Variety, Description, Score, Price, Location, and Taster Information, as shown in the ERD below and the SQL file in our project repository.
+
+<img width="433" alt="WineryDB" src="https://user-images.githubusercontent.com/113553238/222619326-18eb9c79-3dd4-424f-8d43-a9a3ee799e10.png">
+
+This information will be used in order to design a simple website where users can apply these filters to a table of wine data in order to produce a recommendation based on those filters. For example, if a user wants to know about any floral, bright Pinot Grigios under $65, they can apply those filters to our table to create a list of wines that match those terms according to the dataset.
 
 ## Machine Learning 
 
