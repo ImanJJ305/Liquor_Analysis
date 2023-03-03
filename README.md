@@ -1,6 +1,8 @@
 # Wine_Analysis_Neural_Network_Model
 ## Overview
-This project aims to create a neural network that can predict wine review scores based on various wine characteristics. The process involves data collection, preprocessing, and model development. By successfully executing this project, we aim to create a robust neural network with far-reaching applications in artificial intelligence and machine learning.
+This project is being conductin to assist a fictional company in selecting which wine to increase production on, and determining the association of reviews and descriptors from data scraped from WineEnthusiast during the week of November 22nd, 2017. This topic was selected as we all wanted to work with a product or data type that we were either familiar with or would be interested in learning more about. Once we stumbled upon this data set our group agreed that this would be an interesting subject to evaluate and decided to select this as our data source for the assignment.
+
+In addition to determing the production increases, this project aims to create a neural network that can predict wine review scores based on various wine characteristics. The process involves data collection, preprocessing, and model development. By successfully executing this project, we aim to increase the sales and growth of this fictional company as well as create a robust neural network with far-reaching applications in artificial intelligence and machine learning.
 
 ## Cleaning the Data
 
