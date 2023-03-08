@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UFO Finder</title>
+    <title>Wine Recommendation Filter</title>
 
 
     <!--link to BootStrap-->    
@@ -26,7 +26,7 @@
 
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-           <a class="navbar-brand" href="index.html">UFO Sightings</a>
+           <a class="navbar-brand" href="index.html">Wine Recommendation Selector</a>
         </nav>
     </div>
 
@@ -34,36 +34,24 @@
 
     <!--Webpage Header-->
     <div class="jumbotron">
-        <h1 class="display-4">The Truth is Out There</h1>
+        <h1 class="display-4">Which Wine is Right For You?</h1>
     </div>
 
     <!--Article Title and Paragraph-->
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
-                <h3>UFO Sightings: Fact of Fancy? <small>Ufologists Weigh In</small></h3>
+                <h3>Wine Selector Tool 
+                    <small>Personalized wine recommendations we know you'll love</small></h3>
           </div>
 
           <div class="col-md-8">
                 <p>
-                    Are we alone in the universe? For millennia, humans have turned to the sky to answer this question. 
-                    Now, thanks to research generously funded by W. Avy, a UFO-enthusiast and amateur ufologist, 
-                    we can supplement our sky-searching with data analysis.
+                    Our wine selector tool is a quick and easy-to-use system that narrows down your perfect pick based on the kinds of flavors you like, your budget, and winery location. 
                     <br><br>
-                    "The release of this analysis is well-timed: It coincides with the celebration of World UFO Day, 
-                    which is a moment for ufologists around the world to connect, relax, and sample a range of UFO-themed snacks," 
-                    said Dr. Ursula F. Olivier, the world's preeminent expert on circular sightings. "Citizen-scientists can be especially 
-                    helpful in both cataloguing sightings—which is hugely helpful for us in our search for aliens—and in helping us celebrate 
-                    the work that has already been done, such as this data visualization project, 
-                    which will help us raise awareness of the ubiquity of sightings!"
+                    Data about the wines were scraped from articles and reviews from WineEnthusiast magazine during the week of November 22, 2017, so the filter also gives you information about the wine's score, reviewer, and reviewer's Twitter handle.
                     <br><br>
-                    Not everyone is ready to celebrate, however. Local CEO and vocal anti-alien activist V. Isualize reached out to our 
-                    reporters to go on record as firmly opposed to any attempts to provide access to this data. "If there are aliens, 
-                    they certainly would like to be left alone," she stated, before directing us to the Leave Aliens Alone (LAA) community 
-                    engagement initiative she founded and funds.
-                    <br><br>
-                    So what do YOU think? Are we alone in the universe? Are aliens trying to contact us, 
-                    or do they want to be left alone? Dig through the data yourself, and let us know what you see.
+                    Use this selector to get wine suggestions specifically catered to your tastes. Or use it to remind you of that delicious wine you recently enjoyed.
                 </p>
           </div>
         </div>
@@ -79,30 +67,44 @@
                     <p><b><u>FILTER SEARCH</u></b></p>
                     <ul class="bg-dark">
 
-                        <!-- CHALLENGE NEED - Filter Using New <form> Tag-->
                         <li class="list-group" class="btn-dark">
-                                <label for="datetime">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
+                            <label for="variety">Enter Variety</label>
+                            <input type="text" placeholder="Cabernet Sauvignon" id="variety" />
+                        </li>
+                        
+                        <li class="list-group" class="btn-dark">
+                                <label for="country">Enter Country</label>
+                                <input type="text" placeholder="US" id="country" />
                         </li>
 
                         <li class="list-group" class="btn-dark">
-                            <label for="city">Enter City</label>
-                            <input type="text" placeholder="benton" id="city">
+                            <label for="province">Enter Province</label>
+                            <input type="text" placeholder="California" id="province">
                         </li>
 
                         <li class="list-group" class="btn-dark">
-                            <label for="state">Enter State</label>
-                            <input type="text" placeholder="ar" id="state">
+                            <label for="region_1">Enter Region 1</label>
+                            <input type="text" placeholder="Napa Valley" id="region_1">
                         </li>
 
                         <li class="list-group" class="btn-dark">
-                            <label for="country">Enter Country</label>
-                            <input type="text" placeholder="us" id="country">
+                            <label for="region_2">Enter Region 2</label>
+                            <input type="text" placeholder="Napa" id="region_2">
                         </li>
 
                         <li class="list-group" class="btn-dark">
-                            <label for="shape">Enter Shape</label>
-                            <input type="text" placeholder="circle" id="shape">
+                            <label for="winery">Enter Winery</label>
+                            <input type="text" placeholder="Okapi" id="winery" />
+                        </li>
+
+                        <li class="list-group" class="btn-dark">
+                            <label for="designation">Enter Designation</label>
+                            <input type="text" placeholder="Estate" id="designation">
+                        </li>
+
+                        <li class="list-group" class="btn-dark">
+                            <label for="price">Enter Price</label>
+                            <input type="text" placeholder="100" id="price" />
                         </li>
                         
                         <li class="list-group" class="btn-dark">
@@ -126,13 +128,19 @@
                 <table class="table table-striped">
                 <thead>
                         <tr>
-                            <th>Date</th>
-                            <th>City</th>
-                            <th>State</th>
+                            <th>Score</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Taster Name</th>
+                            <th>Taster Twitter</th>
+                            <th>Price</th>
+                            <th>Designation</th>
+                            <th>Variety</th>
+                            <th>Region 1</th>
+                            <th>Region 2</th>
+                            <th>Province</th>
                             <th>Country</th>
-                            <th>Shape</th>
-                            <th>Duration</th>
-                            <th>Comments</th>
+                            <th>Winery</th>
                         </tr>
                 </thead>
                 <tbody></tbody>
