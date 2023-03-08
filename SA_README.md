@@ -4,7 +4,7 @@ A Sentiment Analysis technique was applied to answer if the description of the w
 
 For this reason, the 'description', 'price', and 'points' columns were retrieved from the dataframe to work on the ML model. Based on the points values, a 'sentiment' column was created to store the positive and negative sentiments being the positive ones  those wines with reviews over 90 points, so the negative were the remaining ones.
 
-![Sentiment_df](/images/Sentiment.PNG)  
+![Sentiment](/images/Sentiment.PNG)  
 
 ### Tokenizing 'Description' into values- (Converting text data into sequences of integers).
 
