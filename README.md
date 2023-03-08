@@ -28,7 +28,14 @@ In the final step, the Designation column was dropped as it was deemed irrelevan
 
 Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in order to better understand how different wines are sorted into different categories, as well as which factors are considered when writing a review about a certain wine. After cleaning the data, it was sorted into different categories depending on how a potential user would want to group certain wines. These categories include Variety, Description, Score, Price, Location, and Taster Information, as shown in the ERD below and the SQL file in our project repository.
 
+#### Dataset ERD
+
 <img width="433" alt="WineryDB" src="https://user-images.githubusercontent.com/113553238/222619326-18eb9c79-3dd4-424f-8d43-a9a3ee799e10.png">
+
+#### Data Analysis in SQL
+
+<img width="612" alt="Screen Shot 2023-03-08 at 12 24 35 PM" src="https://user-images.githubusercontent.com/113553238/223785735-fe3092c7-c791-418c-8041-66acdd9cd83b.png">
+<img width="610" alt="Screen Shot 2023-03-08 at 12 24 51 PM" src="https://user-images.githubusercontent.com/113553238/223785723-ce8b51f8-2013-443f-a0c7-7238a7a8952d.png">
 
 #### Wine by Description
 
