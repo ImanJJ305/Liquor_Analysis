@@ -67,3 +67,15 @@ Once the optimal weights were found, the model's performance was evaluated using
 
 ### Prediction vs Actual Value
 <img width="205" alt="Screenshot 2023-02-23 at 10 29 57 PM" src="https://user-images.githubusercontent.com/112649072/221085158-2e88cf9e-2652-4295-8d7f-d52f1e6618d6.png">
+
+## Wine Selector Website
+
+An additional aspect of this project was to create a website using JavaScript and HTML that allows users to filter through the WineEnthusiast data and select a wine according to their specific tastes. You are able to select some or all of the categories and type whatever you like, and the selector tool will draw from the dataset and show you all or any of the wines that match your search.
+
+Below are screenshots of the selector tool:
+<img width="1160" alt="Screen Shot 2023-03-08 at 11 30 13 AM" src="https://user-images.githubusercontent.com/113553238/223774810-5407bd80-8283-4c87-8829-bbc5451415d6.png">
+<img width="1131" alt="Screen Shot 2023-03-08 at 11 32 51 AM" src="https://user-images.githubusercontent.com/113553238/223774793-52204a58-afbb-436d-bd6d-b2fc4fa4160b.png">
+<img width="1206" alt="Screen Shot 2023-03-08 at 11 33 29 AM" src="https://user-images.githubusercontent.com/113553238/223774785-b4db13ae-e153-438e-b592-40a347aee704.png">
+
+
+
