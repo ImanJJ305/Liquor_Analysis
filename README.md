@@ -30,6 +30,30 @@ Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in
 
 <img width="433" alt="WineryDB" src="https://user-images.githubusercontent.com/113553238/222619326-18eb9c79-3dd4-424f-8d43-a9a3ee799e10.png">
 
+#### Wine by Description
+
+<img width="632" alt="Screen Shot 2023-03-08 at 11 53 12 AM" src="https://user-images.githubusercontent.com/113553238/223781492-458d1f7d-5e62-4d81-aa8b-b3e1784d2410.png">
+
+#### Wine by Location
+
+<img width="1046" alt="Screen Shot 2023-03-08 at 11 57 44 AM" src="https://user-images.githubusercontent.com/113553238/223781491-9ee76d17-9c18-4466-ba16-8f0a6ffa4be0.png">
+
+#### Wine by Price
+
+<img width="341" alt="Screen Shot 2023-03-08 at 11 58 56 AM" src="https://user-images.githubusercontent.com/113553238/223781490-bb4cfa99-5e29-46e7-9a79-b8acf0f8f82a.png">
+
+#### Wine by Score
+
+<img width="373" alt="Screen Shot 2023-03-08 at 11 59 50 AM" src="https://user-images.githubusercontent.com/113553238/223781486-a7311937-2e6d-42d0-88c1-ce4868687269.png">
+
+#### Wine by Taster_Info
+
+<img width="522" alt="Screen Shot 2023-03-08 at 12 00 56 PM" src="https://user-images.githubusercontent.com/113553238/223781481-bca7791f-e30e-4bc7-aaab-822be7a22241.png">
+
+#### Wine by Variety
+
+<img width="442" alt="Screen Shot 2023-03-08 at 12 01 50 PM" src="https://user-images.githubusercontent.com/113553238/223781476-47b31511-e624-4c35-aaee-4a2aa5a70303.png">
+
 This information will be used in order to design a simple website where users can apply these filters to a table of wine data in order to produce a recommendation based on those filters. For example, if a user wants to know about any floral, bright Pinot Grigios under $65, they can apply those filters to our table to create a list of wines that match those terms according to the dataset.
 
 ## Machine Learning 
