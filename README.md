@@ -28,7 +28,14 @@ In the final step, the Designation column was dropped as it was deemed irrelevan
 
 Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in order to better understand how different wines are sorted into different categories, as well as which factors are considered when writing a review about a certain wine. After cleaning the data, it was sorted into different categories depending on how a potential user would want to group certain wines. These categories include Variety, Description, Score, Price, Location, and Taster Information, as shown in the ERD below and the SQL file in our project repository.
 
+#### Dataset ERD
+
 <img width="433" alt="WineryDB" src="https://user-images.githubusercontent.com/113553238/222619326-18eb9c79-3dd4-424f-8d43-a9a3ee799e10.png">
+
+#### Data Analysis in SQL
+
+<img width="612" alt="Screen Shot 2023-03-08 at 12 24 35 PM" src="https://user-images.githubusercontent.com/113553238/223785735-fe3092c7-c791-418c-8041-66acdd9cd83b.png">
+<img width="610" alt="Screen Shot 2023-03-08 at 12 24 51 PM" src="https://user-images.githubusercontent.com/113553238/223785723-ce8b51f8-2013-443f-a0c7-7238a7a8952d.png">
 
 #### Wine by Description
 
@@ -91,6 +98,53 @@ Once the optimal weights were found, the model's performance was evaluated using
 
 ### Prediction vs Actual Value
 <img width="205" alt="Screenshot 2023-02-23 at 10 29 57 PM" src="https://user-images.githubusercontent.com/112649072/221085158-2e88cf9e-2652-4295-8d7f-d52f1e6618d6.png">
+
+## Sentiment Analysis_ Another approach to this dataset
+A Sentiment Analysis technique was applied to answer if the description of the wines given in the dataset lead to a higher review/points.
+
+For this reason, the 'description', 'price', and 'points' columns were retrieved from the dataframe to work on the ML model. Based on the points values, a 'sentiment' column was created to store the positive and negative sentiments being the positive ones  those wines with reviews over 90 points, so the negative were the remaining ones.
+
+![Sentiment_df](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+### Tokenizing 'Description' into values- (Converting text data into sequences of integers).
+
+This step consists in tokenize (convert) the texts into numbers, removing all the punctuations and sets the texts into space-separated organized forms.
+Later on, the value for the vocabulary, embedding dimension and value of oov_token were set. This oov_token was added to replace any unknown words and avoid throwing them out instead.
+80% of data were collected for training purposes and the remaining one for testing.
+
+![Tokenizing](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+### Mergin price with description and run the Machine Learning model.
+
+After tokenize the 'description' column into values and pad them, then this data was merged along the price since only one feature in this case is not relevant for running the model.
+
+![Combining_run](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+![Model_summary](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+For layers, these ones were used:
+-Embedding layer with input shape (None, 120) and output shape (None, 120, 16). This layer takes integer-encoded vocabulary and converts them into dense vectors of fixed size. The layer has 640,000 trainable parameters.
+-GlobalAveragePooling1D layer with output shape (None, 16). This layer computes the average of the embeddings over the time dimension (120 in this case) and returns a fixed-length output vector. This layer has no trainable parameters.
+-Dense layer  with output shape (None, 6). This is a fully connected layer with 102 trainable parameters while the other Dense layer has an output shape (None, 1). This final output layer has 7 trainable parameters.
+The model has a total of 640,109 parameters, all of which are trainable.
+
+### Model evaluation and confusion matrix.
+After evaluating and running the confusion matrix, here below the results can be see:
+
+![Evaluation](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+-No instances were correctly predicted to belong to the negative sentiment class (true negatives). This means that all instances that actually belonged to the negative sentiment class were incorrectly predicted as positive.
+-8919 instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false negatives). This means that there were 8919 instances that actually belonged to the positive sentiment class, but were predicted as negative.
+-21267 instances were correctly predicted to belong to the positive sentiment class (true positives). This means that there were 21267 instances that actually belonged to the positive sentiment class, and were correctly predicted as positive.
+-No instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false positives). This means that all instances that actually belonged to the positive sentiment class were correctly predicted as positive.
+
+Overall, the sentiment analysis model appears to have performed better at identifying positive sentiment (higher reviews) than negative sentiment, as evidenced by the lack of true negatives and the relatively high number of false negatives. Therefore, answering the question: **Does the description of the wines given in the dataset lead to a higher review/points?**, Yes, it does!!
+
+## Running Neural Network model in the Wine Predictor but this time adding the 'Description' column.
+
+![Wine_predictor_description](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+
+Let's compare results!!
 
 ## Wine Selector Website
 
