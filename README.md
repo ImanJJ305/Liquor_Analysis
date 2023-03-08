@@ -100,11 +100,12 @@ Once the optimal weights were found, the model's performance was evaluated using
 <img width="205" alt="Screenshot 2023-02-23 at 10 29 57 PM" src="https://user-images.githubusercontent.com/112649072/221085158-2e88cf9e-2652-4295-8d7f-d52f1e6618d6.png">
 
 ## Sentiment Analysis_ Another approach to this dataset
+ 
 A Sentiment Analysis technique was applied to answer if the description of the wines given in the dataset lead to a higher review/points.
 
 For this reason, the 'description', 'price', and 'points' columns were retrieved from the dataframe to work on the ML model. Based on the points values, a 'sentiment' column was created to store the positive and negative sentiments being the positive ones  those wines with reviews over 90 points, so the negative were the remaining ones.
 
-![Sentiment_df](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Sentiment_df](/images/Sentiment.PNG)  
 
 ### Tokenizing 'Description' into values- (Converting text data into sequences of integers).
 
@@ -112,15 +113,15 @@ This step consists in tokenize (convert) the texts into numbers, removing all th
 Later on, the value for the vocabulary, embedding dimension and value of oov_token were set. This oov_token was added to replace any unknown words and avoid throwing them out instead.
 80% of data were collected for training purposes and the remaining one for testing.
 
-![Tokenizing](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Tokenizing](/images/Tokenizing.PNG)
 
 ### Mergin price with description and run the Machine Learning model.
 
 After tokenize the 'description' column into values and pad them, then this data was merged along the price since only one feature in this case is not relevant for running the model.
 
-![Combining_run](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Combining_run](/images/Combining_run.PNG)
 
-![Model_summary](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Model_summary](/images/Model_summary.PNG)
 
 For layers, these ones were used:
 -Embedding layer with input shape (None, 120) and output shape (None, 120, 16). This layer takes integer-encoded vocabulary and converts them into dense vectors of fixed size. The layer has 640,000 trainable parameters.
@@ -131,7 +132,7 @@ The model has a total of 640,109 parameters, all of which are trainable.
 ### Model evaluation and confusion matrix.
 After evaluating and running the confusion matrix, here below the results can be see:
 
-![Evaluation](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Evaluation](/images/Evaluation.PNG)
 
 -No instances were correctly predicted to belong to the negative sentiment class (true negatives). This means that all instances that actually belonged to the negative sentiment class were incorrectly predicted as positive.
 -8919 instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false negatives). This means that there were 8919 instances that actually belonged to the positive sentiment class, but were predicted as negative.
@@ -142,7 +143,7 @@ Overall, the sentiment analysis model appears to have performed better at identi
 
 ## Running Neural Network model in the Wine Predictor but this time adding the 'Description' column.
 
-![Wine_predictor_description](C:\Users\Yady\MIA-VIRT-DATA-PT-11-2022-U-B\FINAL PROJECT\Lazaro)
+![Wine_predictor_description](/images/Wine_predictor_description.PNG)
 
 Let's compare results!!
 
