@@ -44,7 +44,7 @@ Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in
 This information will be used in order to design a simple website where users can apply these filters to a table of wine data in order to produce a recommendation based on those filters. For example, if a user wants to know about any floral, bright Pinot Grigios under $65, they can apply those filters to our table to create a list of wines that match those terms according to the dataset.
 
 
-## Intial Analysis Of Data For Suggestions
+## Intial Analysis of Data for Suggestions
 (For initial questions for company)
 
 To begin the analysis the unnecessary columns were dropped and the most highle considered columns were checked for null values. 
@@ -62,7 +62,7 @@ From there we filtered the data to pull the top performing varieties to determin
 Finally we gathered the average pricing of the top performing wines to consider a good pricing for our product. 
 <img width="832" alt="Screen Shot 2023-03-09 at 12 50 46 AM" src="https://user-images.githubusercontent.com/80222506/223932510-e9a5789d-e8ff-4f90-8735-a0a219053d31.png">
 
-All of this data can also be viewed within our Tableau Story Board here: 
+All of this data can also be viewed within our Tableau Story Board here: https://public.tableau.com/app/profile/iman.jacques/viz/Wine_Analysis_Story/Story1?publish=yes
 
 
 ## Neural Network Analysis
