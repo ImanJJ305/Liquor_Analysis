@@ -156,11 +156,11 @@ After evaluating and running the confusion matrix, here below the results can be
 
 -*No instances were correctly predicted to belong to the negative sentiment class (true negatives). This means that all instances that actually belonged to the negative sentiment class were incorrectly predicted as positive.
 
--*8919 instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false negatives). This means that there were 8919 instances that actually belonged to the positive sentiment class, but were predicted as negative.
+-*8919 instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false positives). This means that there were 8919 instances that actually belonged to the positive sentiment class, but were predicted as negative.
 
 -*21267 instances were correctly predicted to belong to the positive sentiment class (true positives). This means that there were 21267 instances that actually belonged to the positive sentiment class, and were correctly predicted as positive.
 
--*No instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false positives). This means that all instances that actually belonged to the positive sentiment class were correctly predicted as positive.
+-*No instances were incorrectly predicted to belong to the negative sentiment class when they actually belonged to the positive sentiment class (false negatives). This means that all instances that actually belonged to the positive sentiment class were correctly predicted as positive.
 
 Overall, the sentiment analysis model appears to have performed better at identifying positive sentiment (higher reviews) than negative sentiment, as evidenced by the lack of true negatives and the relatively high number of false negatives. Therefore, answering the question: **Does the description of the wines given in the dataset lead to a higher review/points?**, Yes, it does!!
 
