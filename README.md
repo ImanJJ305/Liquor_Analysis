@@ -4,26 +4,6 @@ This project is being conducted to assist a fictional company in selecting a win
 
 In addition to determing the production increases, this project aims to create a neural network that can predict wine review scores based on various wine characteristics. The process involves data collection, preprocessing, and model development. By successfully executing this project, we aim to increase the sales and growth of this fictional company as well as create a robust neural network with far-reaching applications in artificial intelligence and machine learning.
 
-## Cleaning the Data
-
-To ensure the functionality of the neural network, the initial step involved data cleaning, which included addressing null values present in the data. One crucial aspect of this process was addressing the null values in the region_2 column. Since some regions did not have a second region associated with them, this column had multiple null values. To rectify this, I devised a solution to replace all null values in the region_2 column with "none," indicating that no second region was associated with that wine.
-
-After addressing the null values, the next step involved adding binning to certain variables with excessive unique values, specifically the region and winery columns. A closer analysis of these columns indicated too many unique values, which could hinder the neural network's ability to process the data efficiently. The images further highlighted this, which showed many unique values in both columns. Therefore, a binning approach was adopted to resolve this issue, where values that did not appear frequently were aggregated and labeled "other." This enabled the neural network to process the data by simplifying the number of unique values in the region and winery columns.
-
-
-### Image of Region Counts
-<img width="701" alt="Screenshot 2023-02-23 at 10 13 40 PM" src="https://user-images.githubusercontent.com/112649072/221083152-59737ec2-53ff-411f-b083-26bcd83a4efa.png">
-
-### Image of Winery Counts
-<img width="713" alt="Screenshot 2023-02-23 at 10 14 43 PM" src="https://user-images.githubusercontent.com/112649072/221083254-5b2097a1-e287-4939-82b8-66229a8f89ed.png">
-
-The subsequent step involved modifying the description column containing excessively long descriptions. To streamline the data and make it more manageable, a solution was devised to identify the 16 most common wine descriptors. A for loop was then used to scan each description and determine if any of the 16 chosen words were present. Following this, only the adjectives were extracted from the description, significantly simplifying the data and making it easier to work with.
-
-
-### Finding Adjectives in the Descriptions Column
-<img width="1153" alt="Screenshot 2023-02-23 at 10 15 46 PM" src="https://user-images.githubusercontent.com/112649072/221083546-3d303a9a-6adf-4076-b437-6c36d851e154.png">
-In the final step, the Designation column was dropped as it was deemed irrelevant to predicting the wine reviews.
-
 ## Designing an ERD and Creating a Database
 
 Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in order to better understand how different wines are sorted into different categories, as well as which factors are considered when writing a review about a certain wine. After cleaning the data, it was sorted into different categories depending on how a potential user would want to group certain wines. These categories include Variety, Description, Score, Price, Location, and Taster Information, as shown in the ERD below and the SQL file in our project repository.
@@ -63,13 +43,53 @@ Using SQL, PostgreSQL, and pgAdmin, we performed an analysis on the wine data in
 
 This information will be used in order to design a simple website where users can apply these filters to a table of wine data in order to produce a recommendation based on those filters. For example, if a user wants to know about any floral, bright Pinot Grigios under $65, they can apply those filters to our table to create a list of wines that match those terms according to the dataset.
 
-## Machine Learning 
+
+## Intial Analysis Of Data For Suggestions
+(For initial questions for company)
+
+To begin the analysis the unnecessary columns were dropped and the most highle considered columns were checked for null values. 
+<img width="829" alt="Screen Shot 2023-03-09 at 12 41 47 AM" src="https://user-images.githubusercontent.com/80222506/223930983-c4bba45d-773d-4405-abff-81b97e2f0368.png">
+
+Then null values were dropped from the supported columns that would be used for the analysis. 
+<img width="840" alt="Screen Shot 2023-03-09 at 12 45 39 AM" src="https://user-images.githubusercontent.com/80222506/223931337-03d40df4-29f1-4bcd-9703-16aee2977aaa.png">
+
+Next we considered what a high range of points would be for our analysis. We decided on a range of 90 to 100 and decided to perform our analysis on this range of points. From this we were able to sermise that Chardonnay, Cabernet Sauvignon, and Pinot Noir were the top performing varieties as they contained the highest number of top performing reviews. 
+<img width="831" alt="Screen Shot 2023-03-09 at 12 47 06 AM" src="https://user-images.githubusercontent.com/80222506/223931805-56036d2d-2c03-4e10-8ca7-96fb74c9b6c9.png">
+
+From there we filtered the data to pull the top performing varieties to determine which winery to potentially increase production with. 
+<img width="856" alt="Screen Shot 2023-03-09 at 12 49 16 AM" src="https://user-images.githubusercontent.com/80222506/223932107-a133c060-6a4d-46c8-9ff6-655c5fbfd16d.png">
+
+Finally we gathered the average pricing of the top performing wines to consider a good pricing for our product. 
+<img width="832" alt="Screen Shot 2023-03-09 at 12 50 46 AM" src="https://user-images.githubusercontent.com/80222506/223932510-e9a5789d-e8ff-4f90-8735-a0a219053d31.png">
+
+All of this data can also be viewed within our Tableau Story Board here: 
+
+
+## Neural Network Analysis
+
+To ensure the functionality of the neural network, the initial step involved data cleaning, which included addressing null values present in the data. One crucial aspect of this process was addressing the null values in the region_2 column. Since some regions did not have a second region associated with them, this column had multiple null values. To rectify this, I devised a solution to replace all null values in the region_2 column with "none," indicating that no second region was associated with that wine.
+
+After addressing the null values, the next step involved adding binning to certain variables with excessive unique values, specifically the region and winery columns. A closer analysis of these columns indicated too many unique values, which could hinder the neural network's ability to process the data efficiently. The images further highlighted this, which showed many unique values in both columns. Therefore, a binning approach was adopted to resolve this issue, where values that did not appear frequently were aggregated and labeled "other." This enabled the neural network to process the data by simplifying the number of unique values in the region and winery columns.
+
+
+### Image of Region Counts
+<img width="701" alt="Screenshot 2023-02-23 at 10 13 40 PM" src="https://user-images.githubusercontent.com/112649072/221083152-59737ec2-53ff-411f-b083-26bcd83a4efa.png">
+
+### Image of Winery Counts
+<img width="713" alt="Screenshot 2023-02-23 at 10 14 43 PM" src="https://user-images.githubusercontent.com/112649072/221083254-5b2097a1-e287-4939-82b8-66229a8f89ed.png">
+
+The subsequent step involved modifying the description column containing excessively long descriptions. To streamline the data and make it more manageable, a solution was devised to identify the 16 most common wine descriptors. A for loop was then used to scan each description and determine if any of the 16 chosen words were present. Following this, only the adjectives were extracted from the description, significantly simplifying the data and making it easier to work with.
+
+
+### Finding Adjectives in the Descriptions Column
+<img width="1153" alt="Screenshot 2023-02-23 at 10 15 46 PM" src="https://user-images.githubusercontent.com/112649072/221083546-3d303a9a-6adf-4076-b437-6c36d851e154.png">
+In the final step, the Designation column was dropped as it was deemed irrelevant to predicting the wine reviews.
+ 
 
 To begin the machine learning process, the first step involved encoding all variables that were not in a numerical format. A for loop was utilized for this task, as seen in the image provided
 
 ### OneHotEncoder
 <img width="1147" alt="Screenshot 2023-02-23 at 10 18 49 PM" src="https://user-images.githubusercontent.com/112649072/221083775-dce1f7e9-ad5b-470c-b299-3874f88ca53c.png">
-
 
 After encoding non-numerical variables, the data was split into the y variable (wine review score) and the x variable (all other variables). The data were then scaled to ensure accurate data processing, given that some variables had significantly larger values than others.
 
@@ -149,7 +169,6 @@ Overall, the sentiment analysis model appears to have performed better at identi
 An additional aspect of this project was to create a website using JavaScript and HTML that allows users to filter through the WineEnthusiast data and select a wine according to their specific tastes. You are able to select some or all of the categories and type whatever you like, and the selector tool will draw from the dataset and show you all or any of the wines that match your search.
 
 Below are screenshots of the selector tool:
-
 
 <img width="1160" alt="Screen Shot 2023-03-08 at 11 30 13 AM" src="https://user-images.githubusercontent.com/113553238/223774810-5407bd80-8283-4c87-8829-bbc5451415d6.png">
 <img width="1131" alt="Screen Shot 2023-03-08 at 11 32 51 AM" src="https://user-images.githubusercontent.com/113553238/223774793-52204a58-afbb-436d-bd6d-b2fc4fa4160b.png">
