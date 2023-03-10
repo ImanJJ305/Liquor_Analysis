@@ -135,7 +135,7 @@ Later on, the value for the vocabulary, embedding dimension and value of oov_tok
 
 ![Tokenizing](/images/Tokenizing.PNG)
 
-### Mergin price with description and run the Machine Learning model.
+### Merging price with description and run the Machine Learning model.
 
 After tokenize the 'description' column into values and pad them, then this data was merged along the price since only one feature in this case is not relevant for running the model.
 
